@@ -1,0 +1,85 @@
+.news-section {
+  padding: 3rem 2rem; /* Adds space above, below, and on the sides */
+  background-color: #ffffff; /* White background for this section */
+}
+
+.news-title-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.news-title-container h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.news-title-container p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.updates-grid {
+  display: grid;
+  /* On larger screens, create 2 columns */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem; /* Space between the news cards */
+  max-width: 1200px; /* Prevents the grid from becoming too wide */
+  margin: 0 auto; /* Centers the grid */
+}
+
+.update-item-card {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #1c8764; /* A green accent border */
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.update-item-card:hover {
+  transform: translateY(-5px); /* Lifts the card up on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.update-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5rem;
+  color: #1c8764;
+  font-weight: bold;
+}
+
+.update-date .day {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.update-date .month {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.update-content h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.update-content p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* --- Responsive Design for Mobile --- */
+@media (max-width: 768px) {
+  .updates-grid {
+    /* On smaller screens, stack to 1 column */
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,46 @@
+/* upper_box.css */
+
+.upper_box {
+  background-color: rgb(216, 230, 221);
+  padding: 10px 35px;
+  display: flex;
+  justify-content: flex-end; 
+}
+.header-right-group {
+  display: flex; /* Arranges logos and text in a row */
+  align-items: center; /* Vertically aligns them */
+  gap: 2.8rem; /* Creates space BETWEEN the logos and the text */
+}
+.skip {
+
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.22px;
+  font-family: Arial;
+  margin: 0;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social-icon {
+  height: 20px; /* Controls the height of the logos */
+  width: 20px;  /* Controls the width of the logos */
+  display: block; /* Helps prevent extra space below the image */
+  border-radius: 20%; 
+}
+.social-icon_whatsapp {
+  height: 28x; /* Controls the height of the logos */
+  width: 28px;  /* Controls the width of the logos */
+  display: block; /* Helps prevent extra space below the image */
+  border-radius: 50%; 
+}
+.social-icon_youtube {
+  height: 28x; /* Controls the height of the logos */
+  width: 29px;  /* Controls the width of the logos */
+  display: block; /* Helps prevent extra space below the image */
+}
+.social-icon:hover {
+  opacity: 0.8;
+}

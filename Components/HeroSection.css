@@ -1,0 +1,105 @@
+/* In Components/HeroSection.css */
+
+.hero-section-wrapper {
+  display: flex;
+  align-items: center; /* Vertically aligns the columns */
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgb(216, 230, 221); /* Light gray background for the whole section */
+}
+
+.slider-column {
+  width: 65%; /* The slider takes up 65% of the space */
+  flex-shrink: 0; /* Prevents this column from shrinking */
+}
+
+.content-column {
+  width: 35%; /* The content takes up the remaining space */
+}
+
+.content-column h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.content-column p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background-color: #1c8764; /* Using your theme green */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background-color 0.2s;
+}
+
+.hero-button:hover {
+  background-color: #156a4f; /* A darker green */
+}
+.content-column {
+  width: 35%;
+  display: flex;
+  flex-direction: column; /* Stacks the profiles vertically */
+  gap: 1.5rem; /* Creates space between each profile card */
+}
+
+.profile-card {
+  display: flex; /* Puts the image and text side-by-side */
+  align-items: center;
+  background-color: #ffffff; /* Gives each card a white background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image a circle */
+  object-fit: cover; /* Prevents the image from being squashed */
+  margin-right: 1rem; /* Space between image and text */
+}
+
+.profile-text .profile-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.profile-text .profile-title {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+/* Add this to the bottom of HeroSection.css */
+
+.dots-container-external {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 1rem; /* Space between slider and dots */
+}
+
+/* We can reuse the dot styles */
+.dots-container-external .dot {
+  cursor: pointer;
+  font-size: 18px;
+  color: #aaa; /* A light gray for inactive dots */
+  transition: color 0.2s;
+}
+
+.dots-container-external .dot:hover {
+  color: #555;
+}
+
+.dots-container-external .dot.active {
+  color: #1c8764; /* Your theme green for the active dot */
+  transform: scale(1.2);
+}
