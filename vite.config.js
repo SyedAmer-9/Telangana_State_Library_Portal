@@ -11,6 +11,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  root: ".",      // ✅ root is MAJOR_PROJECT folder
+
   plugins: [react()],
   server: {
     host: true,

@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './PROJECTS/MAJOR_PROJECT/index.css' // ✅ Correct path & case
+import './index.css' // ✅ Correct path & case
 //import App from './useRef/App.jsx' // ✅ Correct path & case
 import App from './App.jsx'
 //import './useContext/index.css'
